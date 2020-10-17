@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="menu.css">
+</head>
+<body>
+    <style>
+#header{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.active {
+  background-color: #4CAF50;
+}
+.button {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  border-radius:5px;
+}
+
+.button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+.cart-button{
+  background-color: white; 
+  color: black; 
+  border: 2px solid orange;
+  border-radius:5px;
+}
+.cart-button:hover {
+    color: white;
+  background-color: orange;
+  
+
+}
+</style>
+<script type="text/javascript">
+    function myFunction() {
+  alert("Proceed to Buy?");
+}
+</script>
+  
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+      <!--md break point at 768px-->
+      <div class="container-fluid">
+        <!-- container fluid takes up 100% of the screen-->
+        <a href="#" class="navbar-brand"><img id="logo" src="images\dyp.png"></a>
+        <h3 id="headtext">DY PATIL COLLEGE OF ENGINEERING</h3>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+          <!--thsi is navigation toggler for smaller screens-->
+          <span class="navbar-toggler-icon"></span>
+          <!--this is for the navbar icon-->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-secondary">Login/Signup</button>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<div class="container py-5">
+
+  <!-- For demo purpose -->
+  <div class="row text-center text-white mb-5">
+    <div class="col-lg-7 mx-auto">
+      <h1 class="display-4" style="text-shadow: 2px 2px 4px #000000">D Y PATIL COLLEGE OF ENGINEERING</h1>
+      <h2 class="display-4" style="color: black; text-shadow: 2px 2px 4px #000000"><p>FOOD MENU</p></h2>
+      </p>
+    </div>
+  </div>
+  <!-- End -->
+
+  <div class="row">
+    <div class="col-lg-8 mx-auto">
+
+      <!-- List group-->
+      <ul class="list-group shadow">
+
+        <!-- list group item-->
+        <li class="list-group-item">
+          <!-- Custom content-->
+          <div class="media align-items-lg-center flex-column flex-lg-row p-3">
+            <div class="media-body order-2 order-lg-1">
+              <h5 class="mt-0 font-weight-bold mb-2">SAMOSA</h5>
+              <p class="font-italic text-muted mb-0 small">IT IS A GOOD SAMOSA</p>
+              <div class="d-flex align-items-center justify-content-between mt-1">
+                <h6 class="font-weight-bold my-2">20.00</h6>
+                <ul class="list-inline small">
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire-o text-gray"></i></li>
+                </ul>
+              </div>
+              <button class="button"onclick="myFunction()">Buy Now</button>
+               <button class="cart-button" style="float: right;">Add to cart</button>
+            </div><img src="images/food1.jpg" width="200" class="ml-lg-5 order-1 order-lg-2">
+          </div>
+          <!-- End -->
+        </li>
+        <!-- End -->
+        <p style="font-size: 20px; text-decoration: underline;"><b>MAIN COURCE:</b></p>
+        <!-- list group item-->
+        <li class="list-group-item">
+          <!-- Custom content-->
+          <div class="media align-items-lg-center flex-column flex-lg-row p-3">
+            <div class="media-body order-2 order-lg-1">
+              <h5 class="mt-0 font-weight-bold mb-2">WADA PAV </h5>
+              <p class="font-italic text-muted mb-0 small">WADA PAV IS BESTTTT</p>
+              <div class="d-flex align-items-center justify-content-between mt-1">
+                <h6 class="font-weight-bold my-2">99.00</h6>
+                <ul class="list-inline small"> 
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                </ul>
+              </div>
+              <button style=""class="button"onclick="myFunction()">Buy Now</button>
+              <button class="cart-button" style="float: right;">Add to cart</button>
+            </div><img src="images/food2.jpg" alt="Generic placeholder image" width="200" class="ml-lg-5 order-1 order-lg-2">
+          </div>
+          <!-- End -->
+        </li>
+        <!-- End -->
+        <!-- list group item -->
+        <li class="list-group-item">
+          <!-- Custom content-->
+          <div class="media align-items-lg-center flex-column flex-lg-row p-3">
+            <div class="media-body order-2 order-lg-1">
+              <h5 class="mt-0 font-weight-bold mb-2">VEG BIRYANI</h5>
+              <p class="font-italic text-muted mb-0 small">BIRYANI INGREDIENTS.............................</p>
+              <div class="d-flex align-items-center justify-content-between mt-1">
+                <h6 class="font-weight-bold my-2">140.00</h6>
+                <ul class="list-inline small">
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire-o text-gray"></i></li>
+                </ul>
+              </div>
+              <button style=""class="button"onclick="myFunction()">Buy Now</button>
+              <button class="cart-button" style="float: right;">Add to cart</button>
+            </div><img src="images/food3.jpg" alt="Generic placeholder image" width="200" class="ml-lg-5 order-1 order-lg-2">
+          </div>
+          <!-- End -->
+        </li>
+        <!-- End -->
+        <p style="font-size: 20px; text-decoration: underline;"><b>SNACKS:</b></p>
+        <!-- list group item -->
+        <li class="list-group-item">
+          <!-- Custom content-->
+          <div class="media align-items-lg-center flex-column flex-lg-row p-3">
+            <div class="media-body order-2 order-lg-1">
+              <h5 class="mt-0 font-weight-bold mb-2">PANEER MASALA</h5>
+              <p class="font-italic text-muted mb-0 small">LOTS OF PANEER AND OTHER GOOD INGREDIENTS..............</p>
+              <div class="d-flex align-items-center justify-content-between mt-1">
+                <h6 class="font-weight-bold my-2">220.00</h6>
+                <ul class="list-inline small">
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                </ul>
+              </div>
+              <button style=""class="button"onclick="myFunction()">Buy Now</button>
+              <button class="cart-button" style="float: right;">Add to cart</button>
+            </div><img src="images/food4.jpg" alt="Generic placeholder image" width="200" class="ml-lg-5 order-1 order-lg-2">
+          </div>
+          <!-- End -->
+        </li>
+        <!-- End -->
+         <li class="list-group-item">
+          <!-- Custom content-->
+          <div class="media align-items-lg-center flex-column flex-lg-row p-3">
+            <div class="media-body order-2 order-lg-1">
+              <h5 class="mt-0 font-weight-bold mb-2">non VEG BIRYANI</h5>
+              <p class="font-italic text-muted mb-0 small">BIRYANI INGREDIENTS.............................</p>
+              <div class="d-flex align-items-center justify-content-between mt-1">
+                <h6 class="font-weight-bold my-2">140.00</h6>
+                <ul class="list-inline small">
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire-o text-gray"></i></li>
+                </ul>
+              </div>
+              <button style=""class="button"onclick="myFunction()">Buy Now</button>
+              <button class="cart-button" style="float: right;">Add to cart</button>
+            </div><img src="images/food3.jpg" alt="Generic placeholder image" width="200" class="ml-lg-5 order-1 order-lg-2">
+          </div>
+          <!-- End -->
+        </li>
+         <li class="list-group-item">
+          <!-- Custom content-->
+          <div class="media align-items-lg-center flex-column flex-lg-row p-3">
+            <div class="media-body order-2 order-lg-1">
+              <h5 class="mt-0 font-weight-bold mb-2">ABC</h5>
+              <p class="font-italic text-muted mb-0 small">BIRYANI INGREDIENTS.............................</p>
+              <div class="d-flex align-items-center justify-content-between mt-1">
+                <h6 class="font-weight-bold my-2">140.00</h6>
+                <ul class="list-inline small">
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire-o text-gray"></i></li>
+                </ul>
+              </div>
+              <button style=""class="button"onclick="myFunction()">Buy Now</button>
+              <button class="cart-button" style="float: right;">Add to cart</button>
+            </div><img src="images/food3.jpg" alt="Generic placeholder image" width="200" class="ml-lg-5 order-1 order-lg-2">
+          </div>
+          <!-- End -->
+        </li>
+         <li class="list-group-item">
+          <!-- Custom content-->
+          <div class="media align-items-lg-center flex-column flex-lg-row p-3">
+            <div class="media-body order-2 order-lg-1">
+              <h5 class="mt-0 font-weight-bold mb-2">VEG BIRYANI</h5>
+              <p class="font-italic text-muted mb-0 small">BIRYANI INGREDIENTS.............................</p>
+              <div class="d-flex align-items-center justify-content-between mt-1">
+                <h6 class="font-weight-bold my-2">140.00</h6>
+                <ul class="list-inline small">
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire-o text-gray"></i></li>
+                </ul>
+              </div>
+              <button style=""class="button"onclick="myFunction()">Buy Now</button>
+              <button class="cart-button" style="float: right;">Add to cart</button>
+            </div><img src="images/food3.jpg" alt="Generic placeholder image" width="200" class="ml-lg-5 order-1 order-lg-2">
+          </div>
+          <!-- End -->
+        </li>
+         <p style="font-size: 20px; text-decoration: underline;"><b>BEVERAGES:</b></p>
+         <li class="list-group-item">
+          <!-- Custom content-->
+          <div class="media align-items-lg-center flex-column flex-lg-row p-3">
+            <div class="media-body order-2 order-lg-1">
+              <h5 class="mt-0 font-weight-bold mb-2">HOT TEA</h5>
+              <p class="font-italic text-muted mb-0 small">TEA POWDER .MILK.............................</p>
+              <div class="d-flex align-items-center justify-content-between mt-1">
+                <h6 class="font-weight-bold my-2">10.00</h6>
+                <ul class="list-inline small">
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire-o text-gray"></i></li>
+                </ul>
+              </div>
+              <button style=""class="button"onclick="myFunction()">Buy Now</button>
+              <button class="cart-button" style="float: right;">Add to cart</button>
+            </div><img src="images/food3.jpg" alt="Generic placeholder image" width="200" class="ml-lg-5 order-1 order-lg-2">
+          </div>
+          <!-- End -->
+        </li>
+         <li class="list-group-item">
+          <!-- Custom content-->
+          <div class="media align-items-lg-center flex-column flex-lg-row p-3">
+            <div class="media-body order-2 order-lg-1">
+              <h5 class="mt-0 font-weight-bold mb-2">COFFEE</h5>
+              <p class="font-italic text-muted mb-0 small">COFFEE BEANS.............................</p>
+              <div class="d-flex align-items-center justify-content-between mt-1">
+                <h6 class="font-weight-bold my-2">40.00</h6>
+                <ul class="list-inline small">
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire-o text-gray"></i></li>
+                </ul>
+              </div>
+              <button style=""class="button"onclick="myFunction()">Buy Now</button>
+              <button class="cart-button" style="float: right;">Add to cart</button>
+            </div><img src="images/food3.jpg" alt="Generic placeholder image" width="200" class="ml-lg-5 order-1 order-lg-2">
+          </div>
+          <!-- End -->
+        </li>
+        <p style="font-size: 20px; text-decoration: underline;"><b>DESERT:</b></p>
+         <li class="list-group-item">
+          <!-- Custom content-->
+          <div class="media align-items-lg-center flex-column flex-lg-row p-3">
+            <div class="media-body order-2 order-lg-1">
+              <h5 class="mt-0 font-weight-bold mb-2">CHOCO LAVA CAKE</h5>
+              <p class="font-italic text-muted mb-0 small">CHOCOLATE FILLED TREAT.............................</p>
+              <div class="d-flex align-items-center justify-content-between mt-1">
+                <h6 class="font-weight-bold my-2">140.00</h6>
+                <ul class="list-inline small">
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire text-success"></i></li>
+                  <li class="list-inline-item m-0"><i class="fa fa-fire-o text-gray"></i></li>
+                </ul>
+              </div>
+              <button style=""class="button"onclick="myFunction()">Buy Now</button>
+              <button class="cart-button" style="float: right;">Add to cart</button>
+            </div><img src="images/food3.jpg" alt="Generic placeholder image" width="200" class="ml-lg-5 order-1 order-lg-2">
+          </div>
+          <!-- End -->
+        </li>
+
+      </ul>
+      <!-- End -->
+    </div>
+  </div>
+</div>
+  <footer class="p-5">
+    <div class="container-fluid padding">
+      <div class="row">
+        <div class="col-lg-4">
+          <h4 class="font-weight-bold">DY PATIL COLLEGE OF ENGINEERING</h4>
+          <hr class="light">
+          <p>Good Food leads to a Good Mood</p>
+        </div>
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div>
+            <h3>Timings</h3>
+            <hr class="light">
+            <p>8:00 am - 6:00 pm</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div>
+            <h3>For feeback</h3>
+            <hr class="light">
+            <p>Email: dhf@dhfdsfj.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
